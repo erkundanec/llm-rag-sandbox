@@ -3,7 +3,7 @@ Demo script showing RAG in action.
 """
 
 from build_index import build_index
-from rag_system import RAGSystem
+from lib.rag_system import RAGSystem
 import os
 
 

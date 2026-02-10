@@ -20,21 +20,22 @@ llm-rag-sandbox/
 ├── .gitignore                     # Git ignore rules
 │
 ├── RAG_basics.ipynb              # Jupyter notebook with RAG fundamentals
+├── build_index.py                # Index building script (runner)
+├── demo.py                       # Interactive demo script
+├── test_openrautoer.py           # API tests
 │
-├── embedding.py                  # Document embedding functions
-├── vector_store.py               # Vector database operations
-├── rag_system.py                 # Main RAG system implementation
-├── build_index.py                # Index building script
-├── demo.py                       # Demo/example usage
+├── lib/                          # Core RAG library modules
+│   ├── __init__.py               # Package initialization
+│   ├── embedding.py              # Text embedding functions
+│   ├── vector_store.py           # Vector database operations
+│   └── rag_system.py             # Main RAG system class
 │
-├── test_openrautoer.py           # Test suite
-│
-└── knowledge_base/               # Document embeddings & vectors
-    ├── doc1_embeddings.txt       # Embedding data
-    ├── doc2_vector_db.txt        # Vector database file
-    ├── doc3_rag.txt              # RAG reference documents
-    ├── doc4_semantic_search.txt  # Search examples
-    └── doc5_chunking.txt         # Chunking examples
+└── knowledge_base/               # Document knowledge base
+    ├── doc1_embeddings.txt       # Embedding fundamentals
+    ├── doc2_vector_db.txt        # Vector database info
+    ├── doc3_rag.txt              # RAG concepts
+    ├── doc4_semantic_search.txt  # Semantic search guide
+    └── doc5_chunking.txt         # Document chunking guide
 ```
 
 ## Installation
@@ -92,14 +93,22 @@ jupyter notebook RAG_basics.ipynb
 
 ## Module Descriptions
 
-| Module             | Purpose                                                        |
-| ------------------ | -------------------------------------------------------------- |
-| `embedding.py`     | Handles document-to-vector conversion and embedding operations |
-| `vector_store.py`  | Manages vector storage, indexing, and similarity search        |
-| `rag_system.py`    | Orchestrates the full RAG pipeline                             |
-| `build_index.py`   | Processes documents and builds the search index                |
-| `demo.py`          | Demonstrates RAG functionality with example queries            |
-| `RAG_basics.ipynb` | Interactive notebook explaining RAG concepts                   |
+### Core Library (`lib/`)
+
+| Module            | Purpose                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| `embedding.py`    | Text-to-vector embedding functions using OpenRouter API      |
+| `vector_store.py` | In-memory vector database with semantic search capabilities  |
+| `rag_system.py`   | Main RAG orchestrator: retrieval + augmentation + generation |
+
+### Application Scripts
+
+| Script                | Purpose                                                    |
+| --------------------- | ---------------------------------------------------------- |
+| `build_index.py`      | Loads knowledge base documents and builds searchable index |
+| `demo.py`             | Interactive demo showing RAG with example queries          |
+| `test_openrautoer.py` | Tests for OpenRouter API integration                       |
+| `RAG_basics.ipynb`    | Jupyter notebook with detailed RAG explanations            |
 
 ## RAG Pipeline Overview
 

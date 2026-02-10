@@ -4,7 +4,7 @@ Run this once to create your searchable index.
 """
 
 import os
-from vector_store import SimpleVectorStore
+from lib.vector_store import SimpleVectorStore
 
 
 def load_documents(directory):
