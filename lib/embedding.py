@@ -6,6 +6,10 @@ Uses OpenAI's text-embedding-3-small model via OpenRouter.
 import requests
 import os
 import numpy as np
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 
 # Reuse your API key setup
 API_KEY = os.getenv("OPENROUTER_API_KEY", "")
