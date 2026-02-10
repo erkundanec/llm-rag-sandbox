@@ -1,0 +1,6 @@
+Chunking is the process of breaking large documents into smaller pieces for better 
+retrieval. Common strategies include fixed-size chunking (e.g., 500 tokens), 
+sentence-based chunking, or paragraph-based chunking. Good chunks should be 
+self-contained enough to make sense on their own, but small enough that irrelevant 
+information doesn't dilute the meaning. Overlapping chunks can help preserve context 
+across boundaries.

@@ -1,0 +1,5 @@
+Retrieval-Augmented Generation (RAG) is a technique that enhances large language 
+models by giving them access to external knowledge. Instead of relying only on 
+training data, RAG systems retrieve relevant information from a knowledge base 
+and include it in the prompt. This reduces hallucinations and allows the model 
+to answer questions about private or recent data it wasn't trained on.

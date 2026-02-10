@@ -1,0 +1,5 @@
+Semantic search goes beyond keyword matching to understand the intent and meaning 
+behind queries. If you search for "What pets are good for apartments?", semantic 
+search understands you want information about small, quiet animals, even if documents 
+don't contain those exact words. It works by comparing the meaning (embeddings) of 
+your query against document embeddings, finding conceptually similar content.

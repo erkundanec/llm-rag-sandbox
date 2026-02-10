@@ -1,0 +1,5 @@
+Embeddings are numerical representations of text that capture semantic meaning. 
+Each piece of text is converted into a vector (a list of numbers), typically with 
+hundreds or thousands of dimensions. Similar texts will have similar vectors, 
+measured by distance metrics like cosine similarity. This allows computers to 
+understand that "dog" and "puppy" are related, even though the words are different.

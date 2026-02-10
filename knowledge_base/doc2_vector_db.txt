@@ -1,0 +1,5 @@
+Vector databases are specialized storage systems designed to efficiently store and 
+search high-dimensional vectors. Unlike traditional databases that search for exact 
+matches, vector databases find approximate nearest neighbors. Popular vector databases 
+include Pinecone, Weaviate, Milvus, and FAISS. They enable semantic search, where you 
+can find documents similar in meaning rather than just keyword matches.
